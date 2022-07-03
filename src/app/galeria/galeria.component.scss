@@ -1,0 +1,50 @@
+.dia {
+  color: #116b25;
+  background-color: whitesmoke;
+
+  button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    color: #116b25;
+
+    &:hover {
+      transform: scale(1.5);
+      font-weight: bold;
+      transition: 0.4s;
+    }
+  }
+}
+
+.noche {
+  color: red;
+  background-color: black;
+
+  button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    color: red;
+
+    &:hover {
+      transform: scale(1.5);
+      font-weight: bold;
+      transition: 0.4s;
+    }
+  }
+}
+
+
+
+section {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18%;
+
+  h1 {
+    text-transform: uppercase;
+  }
+}

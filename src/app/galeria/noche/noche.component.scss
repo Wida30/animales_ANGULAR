@@ -1,0 +1,99 @@
+.general {
+    background-image: url(../../../assets/Noche/fondo2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    width: 99vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    h2 {
+      text-transform: uppercase;
+      width: 13%;
+      color: whitesmoke;
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 0%;
+      text-transform: uppercase;
+  
+      overflow-y: scroll;
+  
+      width: 85%;
+  
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+  
+      &::-webkit-scrollbar-track {
+        background: inherit;
+        width: 10px;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: red;
+        border-radius: 8px;
+      }
+  
+      li {
+        padding: 1%;
+  
+        .container {
+          position: relative;
+          width: 300px;
+          height: 250px;
+          object-fit: cover;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          // align-items: center;
+          color: whitesmoke;
+        }
+  
+        .image {
+          display: block;
+          width: 86%;
+          height: 80%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+  
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: 0.5s ease;
+          background-color: red;
+          border-radius: 10px;
+        }
+  
+        .container:hover .overlay {
+          opacity: 1;
+        }
+  
+        .text {
+          color: white;
+          font-size: 1em;
+          position: absolute;
+          top: 55%;
+          left: 54%;
+          transform: translate(-56%, -49%);
+          text-align: justify;
+          text-transform: lowercase;
+          width: 90%;
+          height: 90%;
+        }
+      }
+    }
+  }

@@ -1,0 +1,28 @@
+<section [ngClass]="{dia:nocturno, noche:!nocturno}">
+
+    <h1>¿qué tipo de animal eres tú?</h1>
+    <button (click)="nocheDia ()">{{tema}}</button>
+
+
+
+</section>
+
+<ng-template [ngIf]="visible">
+
+
+    <app-diurno [animales]="tierra"></app-diurno>
+    <app-diurno [animales]="aire"></app-diurno>
+    <app-diurno [animales]="agua"></app-diurno>
+
+
+</ng-template>
+
+
+
+<ng-template [ngIf]="!visible">
+    <app-noche [animales]="tierranoc"></app-noche>
+    <app-noche [animales]="airenoc"></app-noche>
+    <app-noche [animales]="aguanoc"></app-noche>
+
+
+</ng-template>

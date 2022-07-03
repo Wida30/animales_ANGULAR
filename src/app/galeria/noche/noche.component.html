@@ -1,0 +1,24 @@
+
+
+<div class="general">
+
+    <h2>{{animales.habitad}}</h2>
+
+
+    <ul>
+        <li *ngFor="let animal of animales.vive">
+
+            <figure class="container">
+                <h3>{{animal.nombre}}</h3>
+                <img src="{{animal.foto.src}}" alt="{{animal.foto.alt}}" class="image">
+
+                <div class="overlay">
+                    <div class="text">{{animal.descripcion}}</div>
+                </div>
+
+            </figure>
+
+        </li>
+    </ul>
+
+</div>
